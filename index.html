@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avadhoot Prasadik Bhajani Mandal</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+      display: flex;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .sidebar {
+      width: 250px;
+      background: #6c6c6c;
+      color: #fff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+    }
+    .sidebar label, .sidebar select {
+      display: block;
+      margin: 10px 0;
+    }
+    .sidebar nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .sidebar nav a:hover {
+      background: #444;
+    }
+    .content {
+      margin-left: 270px;
+      padding: 20px;
+      flex: 1;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .library {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .audio-card {
+      background: #ffcb79;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .audio-card:hover {
+      transform: scale(1.03);
+    }
+    .audio-card h4 {
+      margin: 10px 0;
+      font-size: 16px;
+      word-break: break-word;
+    }
+    .audio-card audio {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .audio-card a {
+      text-decoration: none;
+      color: #0078d7;
+      font-weight: bold;
+    }
+    /* Themes */
+    .light { background-color: #f9f9f9; color: #000; }
+    .dark { background-color: #121212; color: #000000; }
+    .blue { background-color: #e6f0ff; color: #003366; }
+    .green { background-color: #e9f7ef; color: #145a32; }
+    header.light { background: #ffcb79; }
+    header.dark { background: #ffcb79; }
+    header.blue { background: #003366; }
+    header.green { background: #145a32; }
+  </style>
+</head>
+<body class="light">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2 id="sidebarTitle">🎵 Avadhoot Prasadik Bhajani Mandal</h2>
+    <label for="languageSelector">🌐 Language:</label>
+    <select id="languageSelector">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+      <option value="mr">मराठी</option>
+    </select>
+
+    <label for="themeSelector">🎨 Theme:</label>
+    <select id="themeSelector">
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+      <option value="blue">Minimal Blue</option>
+      <option value="green">Minimal Green</option>
+    </select>
+
+    <!-- Alphabetical Navigation -->
+    <h3>📂 Sections</h3>
+    <nav>
+      <a href="#A">A</a>
+      <a href="#B">B</a>
+      <a href="#C">C</a>
+      <a href="#DEF">D E F</a>
+      <a href="#G">G</a>
+      <a href="#HI">H I</a>
+      <a href="#J">J</a>
+      <a href="#KL">K L</a>
+      <a href="#M">M</a>
+      <a href="#NO">N O</a>
+      <a href="#PQ">P Q</a>
+      <a href="#R">R</a>
+      <a href="#S">S</a>
+      <a href="#TU">T U</a>
+      <a href="#VWXYZ">V W X Y Z</a>
+    </nav>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <header class="light">
+      <h1 id="title">Avadhoot Prasadik Bhajani Mandal</h1>
+    </header>
+
+    <!-- Alphabetical Sections -->
+    <div class="section" id="A">
+      <h2>&nbsp;&nbsp;A</h2>
+      <div class="library">
+        <!-- Example audio card -->
+        <div class="audio-card">
+          <h4>Aadhi Rachili Pandhari 18.9.15 - Mehendale</h4>
+          <audio controls src="Bhajans  A 54 -220217/Aadhi rachili pandhari 18.9.15 - Mehendale.wav"></audio>
+          <a href="Bhajans  A 54 -220217/Aadhi rachili pandhari 18.9.15 - Mehendale.wav" download>⬇ Download</a>
+        </div>
+        <div class="audio-card">
+          <h4>Aahe kon konalagi - Athalye</h4>
+          <audio controls src="Bhajans  A 54 -220217/Aahe kon konalagi - Athalye.wav"></audio>
+          <a href="Bhajans  A 54 -220217/Aahe kon konalagi - Athalye.wav" download>⬇ Download</a>
+        </div>
+         <div class="audio-card">
+          <h4>Aai bhavani 20.9.15 - Vilas</h4>
+          <audio controls src="Bhajans  A 54 -220217/Aai bhavani 20.9.15 - Vilas.wav"></audio>
+          <a href="Bhajans  A 54 -220217/Aai bhavani 20.9.15 - Vilas.wav" download>⬇ Download</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="B">
+      <h2>&nbsp;&nbsp;B</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="C">
+      <h2>&nbsp;&nbsp;C</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="DEF">
+      <h2>&nbsp;&nbsp;D E F</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="G">
+      <h2>&nbsp;&nbsp;G</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="HI">
+      <h2>&nbsp;&nbsp;H I</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="J">
+      <h2>&nbsp;&nbsp;J</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="KL">
+      <h2>&nbsp;&nbsp;K L</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="M">
+      <h2>&nbsp;&nbsp;M</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="NO">
+      <h2>&nbsp;&nbsp;N O</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="PQ">
+      <h2>&nbsp;&nbsp;P Q</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="R">
+      <h2>&nbsp;&nbsp;R</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="S">
+      <h2>&nbsp;&nbsp;S</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="TU">
+      <h2>&nbsp;&nbsp;T U</h2>
+      <div class="library"></div>
+    </div>
+
+    <div class="section" id="VWXYZ">
+      <h2>&nbsp;&nbsp;V W X Y Z</h2>
+      <div class="library"></div>
+    </div>
+  </div>
+
+  <script>
+    const themeSelector = document.getElementById('themeSelector');
+    const languageSelector = document.getElementById('languageSelector');
+    const header = document.querySelector('header');
+
+    const translations = {
+      en: { title: "🎵 Professional Audio Library" },
+      hi: { title: "🎵 पेशेवर ऑडियो लाइब्रेरी" },
+      mr: { title: "🎵 व्यावसायिक ऑडिओ लायब्ररी" }
+    };
+
+    themeSelector.addEventListener('change', () => {
+      document.body.className = themeSelector.value;
+      header.className = themeSelector.value;
+    });
+
+    languageSelector.addEventListener('change', () => {
+      const lang = languageSelector.value;
+      document.getElementById('title').textContent = translations[lang].title;
+    });
+
+    // Ensure only one audio plays at a time
+    document.addEventListener('play', function(e){
+      const audios = document.getElementsByTagName('audio');
+      for(let i = 0; i < audios.length; i++){
+        if(audios[i] !== e.target){
+          audios[i].pause();
+        }
+      }
+    }, true);
+  </script>
+</body>
+</html>
